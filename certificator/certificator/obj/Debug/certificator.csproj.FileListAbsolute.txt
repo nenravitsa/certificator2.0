@@ -1,0 +1,12 @@
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\bin\Debug\certificator.exe.config
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.csprojResolveAssemblyReference.cache
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.Form1.resources
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.Form2.resources
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.Properties.Resources.resources
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.csproj.GenerateResource.Cache
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\bin\Debug\certificator.exe
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\bin\Debug\certificator.pdb
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\bin\Debug\itextsharp.xml
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.exe
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.pdb
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.CreateDB.resources
