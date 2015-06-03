@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 namespace Sertificator
 {
     [Serializable()]
-    public class ServicesFirma
+    public class CoServicesData
     {
         private Dictionary<string, string> ServiceDescription ;
         private Dictionary<string, int> ServiceCost ;
-        
 
-        public ServicesFirma()
+        public CoServicesData()
         {
             ServiceDescription = new Dictionary<string, string> {{"", ""}};
             ServiceCost = new Dictionary<string, int> {{"", 0}};

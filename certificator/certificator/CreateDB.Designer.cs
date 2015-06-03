@@ -33,9 +33,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.servName = new System.Windows.Forms.TextBox();
+            this.descript = new System.Windows.Forms.TextBox();
+            this.cost = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -86,27 +86,27 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Cost";
             // 
-            // textBox1
+            // servName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 38);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(185, 20);
-            this.textBox1.TabIndex = 5;
+            this.servName.Location = new System.Drawing.Point(12, 38);
+            this.servName.Name = "servName";
+            this.servName.Size = new System.Drawing.Size(185, 20);
+            this.servName.TabIndex = 5;
             // 
-            // textBox2
+            // descript
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 86);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(185, 133);
-            this.textBox2.TabIndex = 6;
+            this.descript.Location = new System.Drawing.Point(12, 86);
+            this.descript.Multiline = true;
+            this.descript.Name = "descript";
+            this.descript.Size = new System.Drawing.Size(185, 133);
+            this.descript.TabIndex = 6;
             // 
-            // textBox3
+            // cost
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 249);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(185, 20);
-            this.textBox3.TabIndex = 7;
+            this.cost.Location = new System.Drawing.Point(12, 249);
+            this.cost.Name = "cost";
+            this.cost.Size = new System.Drawing.Size(185, 20);
+            this.cost.TabIndex = 7;
             // 
             // button1
             // 
@@ -116,6 +116,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -144,9 +145,9 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.cost);
+            this.Controls.Add(this.descript);
+            this.Controls.Add(this.servName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -166,9 +167,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox servName;
+        private System.Windows.Forms.TextBox descript;
+        private System.Windows.Forms.TextBox cost;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

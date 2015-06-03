@@ -10,3 +10,4 @@ C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\bin\D
 C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.exe
 C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.pdb
 C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.CreateDB.resources
+C:\Users\Lenovo\Documents\GitHub\certificator2.0\certificator\certificator\obj\Debug\certificator.Form3.resources

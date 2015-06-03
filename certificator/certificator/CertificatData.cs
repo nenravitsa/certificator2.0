@@ -7,12 +7,14 @@ using System.Threading.Tasks;
 namespace Sertificator
 {
     [Serializable]
-    class CertificatData
+    struct CertificatData
     {
+
         public string ClientFIO { set; get; }
         public string ClientPhone { set; get; }
         public string ClientEmail { set; get; }
         public int SertificatNumber { set; get; }
         public DateTime DateOrder { private set; get; }
+        public string Manager { set; get; }
     }
 }

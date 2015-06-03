@@ -7,22 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Org.BouncyCastle.Crypto.Tls;
-using sertificator;
+using Sertificator;
 
 namespace certificator
 {
-    public partial class CreateDB : Form
+    public partial class Form3 : Form
     {
-        public CreateDB()
+        public Form3()
         {
             InitializeComponent();
         }
-
+        private void PutDataServ()
+        {
+            nameServ.Text = company.Name;
+            nameClient.Text = company.Adress;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
-            servName.Text = CreatePDF.service.NameServ;
-            descript.Text = CreatePDF.service.Description;
+ 
+            DataLoadSave.SaveData(company);
         }
     }
 }

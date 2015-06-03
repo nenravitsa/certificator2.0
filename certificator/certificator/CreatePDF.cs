@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Net.Mime;
+using System.Windows.Forms;
+using certificator;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using Org.BouncyCastle.Crypto.Tls;
@@ -16,12 +18,20 @@ namespace sertificator
     class CreatePDF
     {
         private CertificatData certificate;
-        private CompanyInfo companyI;
-        public CreatePDF( CertificatData certificatData, CompanyInfo companyInfo)
+        private CompanyData companyI;
+        public CoServicesData service;
+        public static CreatePDF SelfRef
+        {
+            get;
+            set;
+        }
+        public CreatePDF( CertificatData certificatData, CompanyData companyData, CoServicesData serviceData)
         {
 
             certificate = certificatData;
-            companyI = companyInfo;
+            companyI = companyData;
+            service = serviceData;
+            SelfRef = this;
 
         }
 
@@ -38,22 +48,27 @@ namespace sertificator
         public void Create()
         {
             string company = companyI.Name;
-            int number = companyI.SertificatNumber;
+            int number = certificate.SertificatNumber;
             string clientName = certificate.ClientFIO;
             DateTime date = certificate.DateOrder;
-            string adminName = companyI.Manager;
-            string textService = "ServiceDescription"; //about proc
+            string adminName = certificate.Manager;
+            string textService = service.ServiceDescription;
+            string nameService = service.NameServ;
             //companyI.ReadTextService(certificate.SertificatNumber, out ServiceDescription);
-            string filePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+            //string filePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string imagePath = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             string font = Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
             const string str1 = "Сертификат";
             string str2 = "#" + number;
             string addadm = "Администратор: "+adminName;
-            string numString = number.ToString();
-            string dateString = date.ToShortDateString();
-            using (FileStream fs = new FileStream(filePath + @"/results/" + numString +"_ww_"+dateString+".pdf", FileMode.Create, FileAccess.Write, FileShare.None))
+            //string dateString = date.ToShortDateString();
+            var save = new SaveFileDialog();
+            save.Filter = "pdf files (*.pdf)|*.pdf";
+            save.FilterIndex = 1;
+            save.RestoreDirectory = true;
+            if (save.ShowDialog() == DialogResult.OK)
             {
+                Stream fs = File.Create(save.FileName);
                 Rectangle pagesize = new Rectangle(PageSize.A5.Rotate()); //size of document
                 Document doc = new Document(pagesize, 0f, 0f, 0f, 0f);
                 PdfWriter writer = PdfWriter.GetInstance(doc, fs);
@@ -101,7 +116,7 @@ namespace sertificator
                 Font f3 = FontFactory.GetFont(font+@"/resourses/constantine.ttf", BaseFont.IDENTITY_H, true, 20);
                 f3.SetColor(255, 228, 196);
                 selector3.AddFont(f3);
-                Phrase ph3 = selector3.Process(textService);
+                Phrase ph3 = selector3.Process(nameService);
                 Paragraph usluga = new Paragraph(ph3);
                 PdfPCell cell3 = new PdfPCell(new Phrase(usluga));
                 cell3.FixedHeight = 45.0f;

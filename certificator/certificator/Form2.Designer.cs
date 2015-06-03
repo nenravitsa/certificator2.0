@@ -28,36 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.nameServ = new System.Windows.Forms.TextBox();
+            this.nameClient = new System.Windows.Forms.TextBox();
+            this.tel = new System.Windows.Forms.TextBox();
+            this.email = new System.Windows.Forms.TextBox();
+            this.nameAdmin = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Введите номер услуги";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 58);
+            this.label2.Location = new System.Drawing.Point(12, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(136, 13);
             this.label2.TabIndex = 1;
@@ -66,7 +55,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 103);
+            this.label3.Location = new System.Drawing.Point(12, 74);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 13);
             this.label3.TabIndex = 2;
@@ -75,7 +64,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(14, 143);
+            this.label4.Location = new System.Drawing.Point(12, 113);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(114, 13);
             this.label4.TabIndex = 3;
@@ -84,7 +73,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(14, 183);
+            this.label5.Location = new System.Drawing.Point(12, 152);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(32, 13);
             this.label5.TabIndex = 4;
@@ -93,53 +82,46 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 223);
+            this.label6.Location = new System.Drawing.Point(12, 191);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(121, 13);
             this.label6.TabIndex = 5;
             this.label6.Text = "ФИО администратора";
             // 
-            // textBox1
+            // nameServ
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(136, 20);
-            this.textBox1.TabIndex = 6;
+            this.nameServ.Location = new System.Drawing.Point(12, 51);
+            this.nameServ.Name = "nameServ";
+            this.nameServ.Size = new System.Drawing.Size(136, 20);
+            this.nameServ.TabIndex = 7;
             // 
-            // textBox2
+            // nameClient
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 76);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(136, 20);
-            this.textBox2.TabIndex = 7;
+            this.nameClient.Location = new System.Drawing.Point(12, 90);
+            this.nameClient.Name = "nameClient";
+            this.nameClient.Size = new System.Drawing.Size(136, 20);
+            this.nameClient.TabIndex = 8;
             // 
-            // textBox3
+            // tel
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(136, 20);
-            this.textBox3.TabIndex = 8;
+            this.tel.Location = new System.Drawing.Point(12, 129);
+            this.tel.Name = "tel";
+            this.tel.Size = new System.Drawing.Size(136, 20);
+            this.tel.TabIndex = 9;
             // 
-            // textBox4
+            // email
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 159);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(136, 20);
-            this.textBox4.TabIndex = 9;
+            this.email.Location = new System.Drawing.Point(12, 168);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(136, 20);
+            this.email.TabIndex = 10;
             // 
-            // textBox5
+            // nameAdmin
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 199);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(136, 20);
-            this.textBox5.TabIndex = 10;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(12, 239);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(136, 20);
-            this.textBox6.TabIndex = 11;
+            this.nameAdmin.Location = new System.Drawing.Point(12, 207);
+            this.nameAdmin.Name = "nameAdmin";
+            this.nameAdmin.Size = new System.Drawing.Size(136, 20);
+            this.nameAdmin.TabIndex = 11;
             // 
             // pictureBox1
             // 
@@ -153,7 +135,7 @@
             // button1
             // 
             this.button1.Image = global::certificator.Properties.Resources.image;
-            this.button1.Location = new System.Drawing.Point(40, 267);
+            this.button1.Location = new System.Drawing.Point(35, 236);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 12;
@@ -169,18 +151,16 @@
             this.ClientSize = new System.Drawing.Size(334, 302);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.nameAdmin);
+            this.Controls.Add(this.email);
+            this.Controls.Add(this.tel);
+            this.Controls.Add(this.nameClient);
+            this.Controls.Add(this.nameServ);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "Form2";
             this.Text = "Create certificate";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -191,18 +171,16 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox nameServ;
+        private System.Windows.Forms.TextBox nameClient;
+        private System.Windows.Forms.TextBox tel;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.TextBox nameAdmin;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
